@@ -22,12 +22,13 @@ class game():
         self.MinSym = 'O'
         self.EmpSym = '_'
         self.depth_limit = 4
-        self.time_limit = 20
+        self.time_limit = 10
         self.start_time = time()
         self.MIN = -1000
         self.MAX = 1000
         self.no_of_nodes = 0
         self.no_of_plies = []
+        self.USE_PRUNING = False
 
     # Method of winning check function. \
     # Returns 1000 for winning Maximizer and -1000 for winning Minimizer
@@ -41,9 +42,9 @@ class game():
                         and board[row][col] == board[row + 2][col] \
                         and board[row][col] == board[row + 3][col]:
                     if board[row][col] == self.MaxSym:
-                        return 10
+                        return 100
                     else:
-                        return -10
+                        return -100
 
         # Assess horizontal win for both players
         for row in range(0, self.ROWS):
@@ -53,9 +54,9 @@ class game():
                         and board[row][col] == board[row][col + 2] \
                         and board[row][col] == board[row][col + 3]:
                     if board[row][col] == self.MaxSym:
-                        return 10
+                        return 100
                     else:
-                        return -10
+                        return -100
 
         # Assess diagonal win (increasing) for both players
         for row in range(0, self.ROWS - 3):
@@ -65,9 +66,9 @@ class game():
                         and board[row][col] == board[row + 2][col + 2] \
                         and board[row][col] == board[row + 3][col + 3]:
                     if board[row][col] == self.MaxSym:
-                        return 10
+                        return 100
                     else:
-                        return -10
+                        return -100
 
         # Assess diagonal win (decreasing) for both players
         for row in range(self.ROWS - 3, self.ROWS):
@@ -77,15 +78,24 @@ class game():
                         and board[row][col] == board[row - 2][col + 2] \
                         and board[row][col] == board[row - 3][col + 3]:
                     if board[row][col] == self.MaxSym:
-                        return 10
+                        return 100
                     else:
-                        return -10
+                        return -100
 
         # Return value of evaluation function if no win
         return self.eval(board)
 
     # Method of evaluation function. Returns the goodness of a state
     def eval(self, board):
+        gauss_eval =[[3, 4, 5, 7, 5, 4, 3],
+                     [4, 6, 8, 10, 8, 6, 4],
+                     [5, 8, 11, 13, 11, 8, 5],
+                     [6, 10, 13, 15, 13, 10, 6],
+                     [5, 8, 11, 13, 11, 8, 5],
+                     [4, 6, 8, 10, 8, 6, 4],
+                     [3, 4, 5, 7, 5, 4, 3]]
+        eval_score = 0
+        gaussian_score = 0
         # Assess vertical 3-in-a-row for both players
         for row in range(0, self.ROWS - 2):
             for col in range(0, self.COLS):
@@ -93,9 +103,9 @@ class game():
                         and board[row][col] == board[row + 1][col] \
                         and board[row][col] == board[row + 2][col]:
                     if board[row][col] == self.MaxSym:
-                        return 7
+                        eval_score = 70
                     else:
-                        return -7
+                        eval_score = -70
 
         # Assess horizontal 3-in-a-row for both players
         for row in range(0, self.ROWS):
@@ -104,9 +114,9 @@ class game():
                         and board[row][col] == board[row][col + 1] \
                         and board[row][col] == board[row][col + 2]:
                     if board[row][col] == self.MaxSym:
-                        return 7
+                        eval_score = 70
                     else:
-                        return -7
+                        eval_score = -70
 
         # Assess diagonal (increasing) 3-in-a-row for both players
         for row in range(0, self.ROWS - 2):
@@ -115,9 +125,9 @@ class game():
                         and board[row][col] == board[row + 1][col + 1] \
                         and board[row][col] == board[row + 2][col + 2]:
                     if board[row][col] == self.MaxSym:
-                        return 6
+                        eval_score = 60
                     else:
-                        return -6
+                        eval_score = -60
 
         # Assess diagonal (decreasing) 3-in-a-row for both players
         for row in range(self.ROWS - 4, self.ROWS):
@@ -126,9 +136,9 @@ class game():
                         and board[row][col] == board[row - 1][col + 1] \
                         and board[row][col] == board[row - 2][col + 2]:
                     if board[row][col] == self.MaxSym:
-                        return 6
+                        eval_score = 60
                     else:
-                        return -6
+                        eval_score = -60
 
         # Assess vertical 2-in-a-row for both players
         for row in range(0, self.ROWS - 1):
@@ -136,9 +146,9 @@ class game():
                 if board[row][col] != self.EmpSym \
                         and board[row][col] == board[row + 1][col]:
                     if board[row][col] == self.MaxSym:
-                        return 5
+                        eval_score = 30
                     else:
-                        return -5
+                        eval_score = -30
 
         # Assess horizontal 2-in-a-row for both players
         for row in range(0, self.ROWS):
@@ -146,9 +156,9 @@ class game():
                 if board[row][col] != self.EmpSym \
                         and board[row][col] == board[row][col + 1]:
                     if board[row][col] == self.MaxSym:
-                        return 5
+                        eval_score = 30
                     else:
-                        return -5
+                        eval_score = -30
 
         # Assess diagonal (increasing) 2-in-a-row for both players
         for row in range(0, self.ROWS - 1):
@@ -156,9 +166,9 @@ class game():
                 if board[row][col] != self.EmpSym \
                         and board[row][col] == board[row + 1][col + 1]:
                     if board[row][col] == self.MaxSym:
-                        return 4
+                        eval_score = 20
                     else:
-                        return -4
+                        eval_score = -20
 
         # Assess diagonal (decreasing) 2-in-a-row for both players
         for row in range(self.ROWS - 5, self.ROWS):
@@ -166,11 +176,20 @@ class game():
                 if board[row][col] != self.EmpSym \
                         and board[row][col] == board[row - 1][col + 1]:
                     if board[row][col] == self.MaxSym:
-                        return 4
+                        eval_score = 20
                     else:
-                        return -4
+                        eval_score = -20
 
-        return 0
+        # Rate board with gaussian score to give importance to center
+        for row in range(0, self.ROWS):
+            for col in range(0, self.COLS):
+                if board[row][col] != self.EmpSym:
+                    if board[row][col] == self.MaxSym:
+                        gaussian_score += gauss_eval[row][col]
+                    else:
+                        gaussian_score -= gauss_eval[row][col]
+
+        return eval_score + gaussian_score
 
     # Method to find every possible moves
     def move(self, board, player):
@@ -337,16 +356,11 @@ class game():
 
     #Alpha-Beta Pruning variation of minimax fuinction
     def alphabeta(self, board, depth, player, alpha, beta):
-
-
         # Look if someone player is winning
         score = self.is_winning(board)
 
         if depth > self.depth_limit or time() - self.start_time > self.time_limit:
-            if player == self.MaxPlayer:
-                return alpha
-            else:
-                return beta
+            return score
 
         # Run for maximizer's turn
         if player == self.MaxPlayer:
@@ -384,9 +398,9 @@ class game():
     # Runs minimax at depth 0 to return best move at present
     def find_best_move(self, board, player):
         if self.MaxPlayer == player:
-            bestvalue = -1000
+            bestvalue = self.MIN
         else:
-            bestvalue = 1000
+            bestvalue = self.MAX
         bestmove = [-1, -1]
         self.start_time = time()
         print('Searching for best move')
@@ -395,7 +409,10 @@ class game():
 
         for move in moves:
             board = game.do_move(board, move, player)
-            val_of_move = game.minimax(board, 0, not player)
+            if self.USE_PRUNING:
+                val_of_move = game.alphabeta(board, 0, player, self.MIN, self.MAX)
+            else:
+                val_of_move = game.minimax(board, 0, not player)
             board = game.undo_move(board, move, player)
 
             # Get best move for min or max player and returns it
@@ -420,9 +437,11 @@ class game():
 
 if __name__ == "__main__":
     game = game()
+    game.USE_PRUNING = True
     player = game.MaxPlayer
     board = game.board
-    while game.is_winning(game.board) != 10 or game.is_winning(game.board) != -10:
+    score = 0
+    while True:
         # Update board with best move of each player
         board = game.do_move(board, game.find_best_move(board, player), player)
         print('\n\rExplored ' + str(game.no_of_nodes) + ' nodes')
@@ -430,6 +449,14 @@ if __name__ == "__main__":
         game.no_of_nodes = 0
         game.no_of_plies = []
         player = not player
+        game.USE_PRUNING = not game.USE_PRUNING
+        score = game.is_winning(game.board)
+        if score == 100:
+            print('Black player won')
+            break
+        elif score == -100:
+            print('White player won')
+            break
 
 
 
