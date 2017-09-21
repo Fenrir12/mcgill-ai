@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from time import time
-from random import shuffle
+
 from DynamicConnect4Interface import draw_table_score
 
 
@@ -9,25 +9,25 @@ class game():
     def __init__(self):
         self.ROWS = 7
         self.COLS = 7
-        self.board = [['_', '_', '_', '_', '_', '_', 'X'],
-                      ['X', '_', '_', '_', '_', '_', 'O'],
-                      ['O', '_', '_', '_', '_', '_', 'X'],
-                      ['X', '_', '_', '_', '_', '_', 'O'],
-                      ['O', '_', '_', '_', '_', '_', 'X'],
-                      ['X', '_', '_', '_', '_', '_', 'O'],
-                      ['O', '_', '_', '_', '_', '_', '_']]
-        self.MinPlayer = False
-        self.MaxPlayer = True
         self.MaxSym = 'X'
         self.MinSym = 'O'
-        self.EmpSym = '_'
+        self.EmpSym = ' '
+        self.board = [[self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, 'X'],
+                      ['X', self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, 'O'],
+                      ['O', self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, 'X'],
+                      ['X', self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, 'O'],
+                      ['O', self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, 'X'],
+                      ['X', self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, 'O'],
+                      ['O', self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym, self.EmpSym]]
+        self.MinPlayer = False
+        self.MaxPlayer = True
         self.depth_limit = 4
         self.time_limit = 10
         self.start_time = time()
         self.MIN = -1000
         self.MAX = 1000
         self.no_of_nodes = 0
-        self.no_of_plies = []
+        self.no_of_turns = 0
         self.USE_PRUNING = False
 
     # Method of winning check function. \
@@ -328,34 +328,36 @@ class game():
         # Run for maximizer's turn
         if player == self.MaxPlayer:
             # Gather valid moves for max player
-            moves = game.move(board, self.MaxPlayer)
+            moves = self.move(board, self.MaxPlayer)
             best = self.MIN
             # Do every possible move and run minimax recursively for each possible state at different depths
             for move in moves:
                 # Do the move and go into minimax for next depth
-                board = game.do_move(board, move, player)
-                best = max(best, game.minimax(board, depth + 1, not player))
+                board = self.do_move(board, move, player)
+                best = max(best, self.minimax(board, depth + 1, not player))
 
                 # Return board to previous state
-                board = game.undo_move(board, move, player)
+                board = self.undo_move(board, move, player)
             return best
         # Run for minimizer's move
         else:
             # Gather valid moves for min player
-            moves = game.move(board, self.MinPlayer)
+            moves = self.move(board, self.MinPlayer)
             best = self.MAX
             # Do every possible move and run minimax reccursively for each possible state at different depths
             for move in moves:
                 # Do the move and go into minimax for next depth
-                board = game.do_move(board, move, player)
-                best = min(best, game.minimax(board, depth + 1, not player))
+                board = self.do_move(board, move, player)
+                best = min(best, self.minimax(board, depth + 1, not player))
 
                 # Return board to previous state
-                board = game.undo_move(board, move, player)
+                board = self.undo_move(board, move, player)
             return best
 
     #Alpha-Beta Pruning variation of minimax fuinction
     def alphabeta(self, board, depth, player, alpha, beta):
+        # Increment node counter
+        self.no_of_nodes += 1
         # Look if someone player is winning
         score = self.is_winning(board)
 
@@ -366,31 +368,31 @@ class game():
         if player == self.MaxPlayer:
             best = self.MIN
             # Gather valid moves for max player
-            moves = game.move(board, self.MaxPlayer)
+            moves = self.move(board, self.MaxPlayer)
             # Do every possible move and run minimax recursively for each possible state at different depths
             for move in moves:
                 # Do the move and go into minimax for next depth
-                board = game.do_move(board, move, player)
-                best = max(best, game.alphabeta(board, depth + 1, not player, alpha, beta))
+                board = self.do_move(board, move, player)
+                best = max(best, self.alphabeta(board, depth + 1, not player, alpha, beta))
                 alpha = max(best, alpha)
                 # Return board to previous state
-                board = game.undo_move(board, move, player)
+                board = self.undo_move(board, move, player)
                 if beta <= alpha:
                     break
             return best
         # Run for minimizer's move
         else:
             # Gather valid moves for min player
-            moves = game.move(board, self.MinPlayer)
+            moves = self.move(board, self.MinPlayer)
             best = self.MAX
             # Do every possible move and run minimax reccursively for each possible state at different depths
             for move in moves:
                 # Do the move and go into minimax for next depth
-                board = game.do_move(board, move, player)
-                best = min(best, game.alphabeta(board, depth + 1, not player, alpha, beta))
+                board = self.do_move(board, move, player)
+                best = min(best, self.alphabeta(board, depth + 1, not player, alpha, beta))
                 beta = min(best, beta)
                 # Return board to previous state
-                board = game.undo_move(board, move, player)
+                board = self.undo_move(board, move, player)
                 if beta <= alpha:
                     break
             return best
@@ -403,17 +405,17 @@ class game():
             bestvalue = self.MAX
         bestmove = [-1, -1]
         self.start_time = time()
-        print('Searching for best move')
+        #print('Searching for best move')
         # Gather valid moves for player at this turn
-        moves = game.move(board, player)
+        moves = self.move(board, player)
 
         for move in moves:
-            board = game.do_move(board, move, player)
+            board = self.do_move(board, move, player)
             if self.USE_PRUNING:
-                val_of_move = game.alphabeta(board, 0, player, self.MIN, self.MAX)
+                val_of_move = self.alphabeta(board, 0, player, self.MIN, self.MAX)
             else:
-                val_of_move = game.minimax(board, 0, not player)
-            board = game.undo_move(board, move, player)
+                val_of_move = self.minimax(board, 0, not player)
+            board = self.undo_move(board, move, player)
 
             # Get best move for min or max player and returns it
             if self.MaxPlayer == player:
@@ -427,20 +429,36 @@ class game():
             if time() - self.start_time > self.time_limit:
                 break
 
-        if self.MaxPlayer == player:
-            print('Best move for Max is ' + str(move))
-        else:
-            print('Best move for Min is ' + str(move))
+        #if self.MaxPlayer == player:
+            #print('Best move for Max is ' + str(move))
+        #else:
+            #print('Best move for Min is ' + str(move))
 
         return bestmove
 
+    # Convert move from server to move format
+    def convert_move(self, string):
+        return [int(string[0])-1, int(string[1])-1, string[2]]
+
+    # Convert move from move format to server format
+    def send_move(self, move):
+        return str(str(move[0]+1) + str(move[1]+1) + move[2] + "\n")
+
+    def move_list(self):
+        netmoves = []
+        for row in [1, 2, 3, 4, 5, 6, 7]:
+            for col in [1, 2, 3, 4, 5, 6, 7]:
+                for char in ['N', 'S', 'W', 'E']:
+                    netmoves.append(str(row)+str(col)+char)
+        return netmoves
 
 if __name__ == "__main__":
     game = game()
     game.USE_PRUNING = True
-    player = game.MaxPlayer
+    player = game.MaxPlayer = game.MaxPlayer
     board = game.board
     score = 0
+
     while True:
         # Update board with best move of each player
         board = game.do_move(board, game.find_best_move(board, player), player)
@@ -449,13 +467,12 @@ if __name__ == "__main__":
         game.no_of_nodes = 0
         game.no_of_plies = []
         player = not player
-        game.USE_PRUNING = not game.USE_PRUNING
         score = game.is_winning(game.board)
         if score == 100:
-            print('Black player won')
+            print('I won')
             break
         elif score == -100:
-            print('White player won')
+            print('Other player won')
             break
 
 
