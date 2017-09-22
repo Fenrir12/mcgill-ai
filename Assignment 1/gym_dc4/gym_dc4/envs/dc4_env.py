@@ -6,9 +6,11 @@ from DC4.DynamicConnect4Interface import draw_table_score, write_2_file
 import random
 
 REWARD_INVALID_ACTION = -500.0
-REWARD_INVALID_MOVE = -250.0
+REWARD_INVALID_MOVE = -500.0
 REWARD_VALID_MOVE = 50.0
-REWARD_WIN = 500.0
+REWARD_TWO = 100.0
+REWARD_THREE = 250.0
+REWARD_WIN = 10000.0
 
 
 class DC4Env(gym.Env):
@@ -51,13 +53,23 @@ class DC4Env(gym.Env):
             self.current_player = "X" if self.current_player == "O" else "O"
             return {"board": self.board, "player": self.current_player}, True, reward, {}
 
+        # No invalid action or move, game can continue
         self.update_board(action)
 
         if self.is_winning(self.board, self.current_player):
             return {"board": self.board, "player": self.current_player}, True, reward, {}
 
+        if self.three_close(self.board, self.current_player):
+            reward = REWARD_THREE
+            return {"board": self.board, "player": self.current_player}, True, reward, {}
+
+        if self.two_close(self.board, self.current_player):
+            reward = REWARD_TWO
+            return {"board": self.board, "player": self.current_player}, True, reward, {}
+
+        reward = REWARD_VALID_MOVE
         self.current_player = "X" if self.current_player == "O" else "O"
-        return {"board": self.board, "player": self.current_player}, False, REWARD_VALID_MOVE, {}
+        return {"board": self.board, "player": self.current_player}, False, reward, {}
 
     def _reset(self):
         self.current_player = "X"
@@ -182,6 +194,81 @@ class DC4Env(gym.Env):
                         and p in board[row - 1][col + 1] \
                         and p in board[row - 2][col + 2] \
                         and p in board[row - 3][col + 3]:
+                    return True
+
+    def three_close(self, board, player):
+        eval_value = 0
+        # Assess vertical win for both players
+        p = 'o' if player == 'O' else 'x'
+
+        for row in range(0, self.ROWS - 2):
+            for col in range(0, self.COLS):
+                if board[row][col] != self.EmpSym \
+                        and p in board[row][col] \
+                        and p in board[row + 1][col] \
+                        and p in board[row + 2][col]:
+                    return True
+
+        # Assess horizontal win for both players
+        for row in range(0, self.ROWS):
+            for col in range(0, self.COLS - 2):
+                if board[row][col] != self.EmpSym \
+                        and p in board[row][col] \
+                        and p in board[row][col + 1] \
+                        and p in board[row][col + 2]:
+                    return True
+
+        # Assess diagonal win (increasing) for both players
+        for row in range(0, self.ROWS - 2):
+            for col in range(0, self.COLS - 2):
+                if board[row][col] != self.EmpSym \
+                        and p in board[row][col] \
+                        and p in board[row + 1][col + 1] \
+                        and p in board[row + 2][col + 2]:
+                    return True
+
+        # Assess diagonal win (decreasing) for both players
+        for row in range(self.ROWS - 4, self.ROWS):
+            for col in range(0, self.COLS - 2):
+                if board[row][col] != self.EmpSym \
+                        and p in board[row - 1][col + 1] \
+                        and p in board[row - 2][col + 2]:
+                    return True
+
+    def two_close(self, board, player):
+        eval_value = 0
+        # Assess vertical win for both players
+        p = 'o' if player == 'O' else 'x'
+
+        for row in range(0, self.ROWS - 1):
+            for col in range(0, self.COLS):
+                if board[row][col] != self.EmpSym \
+                        and p in board[row][col] \
+                        and p in board[row + 1][col]:
+                    return True
+
+        # Assess horizontal win for both players
+        for row in range(0, self.ROWS):
+            for col in range(0, self.COLS - 1):
+                if board[row][col] != self.EmpSym \
+                        and p in board[row][col] \
+                        and p in board[row][col + 1]:
+                    return True
+
+        # Assess diagonal win (increasing) for both players
+        for row in range(0, self.ROWS - 1):
+            for col in range(0, self.COLS - 1):
+                if board[row][col] != self.EmpSym \
+                        and p in board[row][col] \
+                        and p in board[row + 1][col + 1]:
+                    return True
+
+        # Assess diagonal win (decreasing) for both players
+        for row in range(self.ROWS - 5, self.ROWS):
+            for col in range(0, self.COLS - 1):
+                if board[row][col] != self.EmpSym \
+                        and p in board[row][col] \
+                        and p in board[row - 1][col + 1]:
                     return True
 
     def generate_action(self):

@@ -24,12 +24,11 @@ def create_action_vector():
             "E": False, "W": False}
 
 
-def all_actions_decoded():
+def all_actions_decoded(color):
     pieces = []
     actions = []
-    for color in ['x', 'o']:
-        for i in ['1', '2', '3', '4', '5', '6']:
-            pieces.append(color+i)
+    for i in ['1', '2', '3', '4', '5', '6']:
+        pieces.append(color+i)
     for piece in pieces:
         for dir in ['N', 'S', 'E', 'W']:
             a = create_action_vector()
@@ -103,14 +102,14 @@ tf.reset_default_graph()
 
 #These lines establish the feed-forward part of the network used to choose actions
 inputs1 = tf.placeholder(shape=[1, 49*12+1],dtype=tf.float32)
-W = tf.Variable(tf.random_uniform([49*12+1, 48], 0, 0.01))
+W = tf.Variable(tf.random_uniform([49*12+1, 24], 0, 0.01))
 Qout = tf.matmul(inputs1, W)
 predict = tf.argmax(Qout, 1)
 
 #Below we obtain the loss by taking the sum of squares difference between the target and prediction Q values.
-nextQ = tf.placeholder(shape=[1, 48], dtype=tf.float32)
+nextQ = tf.placeholder(shape=[1, 24], dtype=tf.float32)
 loss = tf.reduce_sum(tf.square(nextQ - Qout))
-trainer = tf.train.GradientDescentOptimizer(learning_rate=0.1)
+trainer = tf.train.GradientDescentOptimizer(learning_rate=0.01)
 updateModel = trainer.minimize(loss)
 
 
@@ -132,13 +131,14 @@ with tf.Session() as sess:
         rAll = 0
         d = False
         j = 0
-        all_actions = all_actions_decoded()
+        color = 'x'
 
         # The Q-Network
         while j < 99:
             j += 1
             # Choose an action by greedily (with e chance of random action) from the Q-network
             a, allQ = sess.run([predict, Qout], feed_dict={inputs1: [s]})
+            all_actions = all_actions_decoded(color)
             action = all_actions[a[0]]
             if np.random.rand(1) < e:
                 action = random.choice(all_actions)
@@ -154,10 +154,15 @@ with tf.Session() as sess:
             _, W1 = sess.run([updateModel, W], feed_dict={inputs1: [encode_state(s1)], nextQ: targetQ})
             rAll += r
             s = encode_state(s1)
+            color = 'o' if color == 'x' else 'x'
             if d == True:
                 # Reduce chance of random action as we train the model.
                 e = 1./((i/50) + 10)
                 env.render()
+                if i in [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000]:
+                    plt.plot(rList)
+                    plt.show()
+                    plt.close()
                 with open("test.txt", "a") as myfile:
                     myfile.write('Reward is '+str(rAll))
                 break
