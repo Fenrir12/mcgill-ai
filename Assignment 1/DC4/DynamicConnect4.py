@@ -2,7 +2,7 @@
 
 from time import time
 
-from DynamicConnect4Interface import draw_table_score
+from DC4.DynamicConnect4Interface import draw_table_score
 
 
 class game():

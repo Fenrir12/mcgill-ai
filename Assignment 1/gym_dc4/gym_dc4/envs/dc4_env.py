@@ -2,12 +2,12 @@ import gym
 import time
 from gym import error, spaces, utils
 from DC4.DynamicConnect4 import game
-from DC4.DynamicConnect4Interface import draw_table_score
+from DC4.DynamicConnect4Interface import draw_table_score, write_2_file
 import random
 
 REWARD_INVALID_ACTION = -500.0
 REWARD_INVALID_MOVE = -250.0
-REWARD_VALID_MOVE = 10.0
+REWARD_VALID_MOVE = 50.0
 REWARD_WIN = 500.0
 
 
@@ -57,7 +57,7 @@ class DC4Env(gym.Env):
             return {"board": self.board, "player": self.current_player}, True, reward, {}
 
         self.current_player = "X" if self.current_player == "O" else "O"
-        return {"board": self.board, "player": self.current_player}, False, reward, {}
+        return {"board": self.board, "player": self.current_player}, False, REWARD_VALID_MOVE, {}
 
     def _reset(self):
         self.current_player = "X"
@@ -71,7 +71,7 @@ class DC4Env(gym.Env):
         return {"board": self.board, "player": self.current_player}
 
     def _render(self, mode='human', close=False):
-        draw_table_score(self.board)
+        write_2_file(self.board)
 
     def get_new_move(self, action):
         rowidx, colidx = self.get_peon_coords(action)
