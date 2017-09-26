@@ -1,9 +1,11 @@
 import sys
 from telnetlib import *
 
-from DynamicConnect4 import game
+from DynamicConnect4_v0 import game_v0
+from DynamicConnect4_v1 import game_v1
 
 from DynamicConnect4Interface import draw_table_score
+
 
 if __name__ == "__main__":
     # Setup game
@@ -11,10 +13,11 @@ if __name__ == "__main__":
     port = sys.argv[2]
     game_id = sys.argv[3]
     color = sys.argv[4]
-    dc4 = game()
-    dc4.USE_PRUNING = (sys.argv[5].lower() == 'true')
-    dc4.time_limit = 9
-    dc4.depth_limit = int(sys.argv[6])
+    version = sys.argv[5]
+    if version == 'v0':
+        dc4 = game_v0()
+    elif version == 'v1':
+        dc4 = game_v1()
     board = dc4.board
 
     # Setup link to game server
@@ -39,7 +42,11 @@ if __name__ == "__main__":
             print(netlink.read_until(b"\n"))
             draw_table_score(board)
             print("----------------------")
-            score = dc4.is_winning(board)
+
+            if version == 'v0':
+                score = dc4.is_winning(board)
+            elif version == 'v1':
+                score = dc4.is_winning(board, player)
 
             if player == dc4.MinPlayer:
                 if score == 100:

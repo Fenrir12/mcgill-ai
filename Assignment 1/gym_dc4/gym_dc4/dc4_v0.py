@@ -5,7 +5,7 @@ import gym_dc4.gym_dc4.envs
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-from DC4.DynamicConnect4 import game
+from DC4.DynamicConnect4_v0 import game
 
 try:
     xrange = xrange

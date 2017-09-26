@@ -1,0 +1,156 @@
+Depth = 1
+Without ordering
+Expanded 14 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+
+With ordering
+Expanded 14 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+Depth = 2
+Without ordering
+Expanded 211 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+
+With ordering
+Expanded 211 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+Depth = 3
+Without ordering
+Expanded 1153 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+
+With ordering
+Expanded 736 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+Depth = 4
+Without ordering
+Expanded 5528 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+
+With ordering
+Expanded 4572 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+Depth = 5
+Without ordering
+Expanded 24740 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+
+With ordering
+Expanded 16754 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+Depth = 6
+Without ordering
+Expanded 199999 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 
+
+With ordering
+Expanded 81087 nodes
+
+
+   1 2 3 4 5 6 7    
+1   , ,X, ,O, , 
+2   , ,X, ,O, , 
+3   , ,O, ,X, , 
+4   , ,O, ,X, , 
+5   , , , , , , 
+6   , ,X, ,O, , 
+7   , ,O, ,X, , 

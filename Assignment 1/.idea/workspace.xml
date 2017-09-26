@@ -10,108 +10,67 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Assignment_1$dynamic_connect_4_interface.coverage" NAME="dynamic-connect-4-interface Coverage Results" MODIFIED="1505624571537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment_1$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1505960545589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gym_dc4/gym_dc4" />
     <SUITE FILE_PATH="coverage/Assignment_1$dc4_v0.coverage" NAME="dc4_v0 Coverage Results" MODIFIED="1506042662125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gym_dc4/gym_dc4/" />
-    <SUITE FILE_PATH="coverage/Assignment_1$dc4_v2.coverage" NAME="dc4_v2 Coverage Results" MODIFIED="1506047027844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gym_dc4/gym_dc4" />
-    <SUITE FILE_PATH="coverage/Assignment_1$dynamic_connect_4.coverage" NAME="dynamic-connect-4 Coverage Results" MODIFIED="1505957453186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Assignment_1$PlayDC4.coverage" NAME="PlayDC4 Coverage Results" MODIFIED="1505855648546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_1$C.coverage" NAME="C Coverage Results" MODIFIED="1506349641342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DC4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$PlayDC4.coverage" NAME="PlayDC4 Coverage Results" MODIFIED="1506364868444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DC4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$dynamic_connect_4_interface.coverage" NAME="dynamic-connect-4-interface Coverage Results" MODIFIED="1505624571537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_1$DynamicConnect4_v1.coverage" NAME="DynamicConnect4_v1 Coverage Results" MODIFIED="1506437989875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DC4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$stat_dc4.coverage" NAME="stat_dc4 Coverage Results" MODIFIED="1506350623314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DC4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$PlayDC4_v1.coverage" NAME="PlayDC4_v1 Coverage Results" MODIFIED="1506365574984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DC4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$DynamicConnect4Interface.coverage" NAME="DynamicConnect4Interface Coverage Results" MODIFIED="1506354602837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DC4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$dc4_v2.coverage" NAME="dc4_v2 Coverage Results" MODIFIED="1506049900409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gym_dc4/gym_dc4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$DynamicConnect4_v0.coverage" NAME="DynamicConnect4_v0 Coverage Results" MODIFIED="1506406009380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DC4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$B.coverage" NAME="B Coverage Results" MODIFIED="1506298236958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DC4" />
+    <SUITE FILE_PATH="coverage/Assignment_1$dynamic_connect_4.coverage" NAME="dynamic-connect-4 Coverage Results" MODIFIED="1506311176374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment_1$TelnetTest.coverage" NAME="TelnetTest Coverage Results" MODIFIED="1505946772173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DynamicConnect4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
+      <file leaf-file-name="DynamicConnect4_v0.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="26" />
+            <state relative-caret-position="4986">
+              <caret line="381" column="4" lean-forward="false" selection-start-line="381" selection-start-column="4" selection-end-line="421" selection-end-column="23" />
               <folding>
                 <element signature="e#19#40#0" expanded="true" />
-                <element signature="e#148#1262#0" expanded="false" />
-                <element signature="e#1420#3774#0" expanded="false" />
-                <element signature="e#1538#1989#0" expanded="false" />
-                <element signature="e#2082#2537#0" expanded="false" />
-                <element signature="e#2645#3112#0" expanded="false" />
-                <element signature="e#3228#3695#0" expanded="false" />
-                <element signature="e#3880#8486#0" expanded="false" />
-                <element signature="e#4845#5241#0" expanded="false" />
-                <element signature="e#5356#5760#0" expanded="false" />
-                <element signature="e#5883#6287#0" expanded="false" />
-                <element signature="e#6389#6712#0" expanded="false" />
-                <element signature="e#6812#7139#0" expanded="false" />
-                <element signature="e#7254#7585#0" expanded="false" />
-                <element signature="e#7708#8039#0" expanded="false" />
-                <element signature="e#8153#8442#0" expanded="false" />
-                <element signature="e#8573#12507#0" expanded="false" />
-                <element signature="e#12614#13117#0" expanded="false" />
-                <element signature="e#13214#13723#0" expanded="false" />
-                <element signature="e#13827#15492#0" expanded="false" />
-                <element signature="e#15611#17420#0" expanded="false" />
-                <element signature="e#17530#18817#0" expanded="false" />
-                <element signature="e#19152#19387#0" expanded="false" />
+                <element signature="e#390#1077#0" expanded="false" />
+                <element signature="e#1101#1896#0" expanded="false" />
+                <element signature="e#1920#2715#0" expanded="false" />
+                <element signature="e#7443#7839#0" expanded="false" />
+                <element signature="e#8987#9310#0" expanded="false" />
+                <element signature="e#9410#9737#0" expanded="false" />
+                <element signature="e#15242#15745#0" expanded="false" />
+                <element signature="e#15842#16351#0" expanded="false" />
+                <element signature="e#16455#18054#0" expanded="false" />
+                <element signature="e#18174#19984#0" expanded="false" />
+                <element signature="e#21798#22037#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dc4_v0.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v0.py">
+      <file leaf-file-name="PlayDC4.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DC4/PlayDC4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="163" column="30" lean-forward="true" selection-start-line="163" selection-start-column="30" selection-end-line="163" selection-end-column="30" />
+            <state relative-caret-position="90">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#291#586#0" expanded="false" />
-                <element signature="e#964#3018#0" expanded="false" />
-                <element signature="e#3074#3293#0" expanded="false" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dc4_v2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v2.py">
+      <file leaf-file-name="PlayDC4_v1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DC4/PlayDC4_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="256" column="20" lean-forward="true" selection-start-line="256" selection-start-column="20" selection-end-line="256" selection-end-column="20" />
+            <state relative-caret-position="576">
+              <caret line="65" column="26" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#291#586#0" expanded="false" />
-                <element signature="e#625#936#0" expanded="false" />
-                <element signature="e#3074#3293#0" expanded="false" />
-                <element signature="e#3366#3804#0" expanded="false" />
-                <element signature="e#3847#4120#0" expanded="false" />
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#224#1168#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ops.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="445" column="0" lean-forward="false" selection-start-line="445" selection-start-column="0" selection-end-line="445" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shape_base.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.5/dist-packages/numpy/core/shape_base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.5/dist-packages/gym/core.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,54 +78,105 @@
       <file leaf-file-name="DynamicConnect4Interface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4Interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="30" column="99" lean-forward="false" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
+            <state relative-caret-position="918">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="B.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DC4/B.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3438">
+              <caret line="482" column="28" lean-forward="false" selection-start-line="482" selection-start-column="28" selection-end-line="482" selection-end-column="28" />
               <folding>
-                <element signature="e#53#985#0" expanded="false" />
-                <element signature="e#1017#2178#0" expanded="false" />
+                <element signature="e#19#40#0" expanded="true" />
+                <element signature="e#358#1045#0" expanded="false" />
+                <element signature="e#1069#1864#0" expanded="false" />
+                <element signature="e#1888#2683#0" expanded="false" />
+                <element signature="e#3952#6306#0" expanded="false" />
+                <element signature="e#6412#11025#0" expanded="false" />
+                <element signature="e#7384#7780#0" expanded="false" />
+                <element signature="e#7895#8299#0" expanded="false" />
+                <element signature="e#8422#8826#0" expanded="false" />
+                <element signature="e#8928#9251#0" expanded="false" />
+                <element signature="e#9351#9678#0" expanded="false" />
+                <element signature="e#9793#10124#0" expanded="false" />
+                <element signature="e#10247#10578#0" expanded="false" />
+                <element signature="e#10692#10981#0" expanded="false" />
+                <element signature="e#11112#15046#0" expanded="false" />
+                <element signature="e#15153#15656#0" expanded="false" />
+                <element signature="e#15753#16262#0" expanded="false" />
+                <element signature="e#21668#21907#0" expanded="false" />
+                <element signature="e#22111#22124#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py">
+      <file leaf-file-name="C.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DC4/C.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="1512" column="0" lean-forward="false" selection-start-line="1512" selection-start-column="0" selection-end-line="1512" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apport_python_hook.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dc4_env.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/envs/dc4_env.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="1296">
+              <caret line="409" column="24" lean-forward="false" selection-start-line="409" selection-start-column="24" selection-end-line="409" selection-end-column="24" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#2845#3363#0" expanded="false" />
-                <element signature="e#3493#3880#0" expanded="false" />
-                <element signature="e#3927#4154#0" expanded="false" />
-                <element signature="e#4200#4409#0" expanded="false" />
-                <element signature="e#4460#4567#0" expanded="false" />
-                <element signature="e#4618#4777#0" expanded="false" />
-                <element signature="e#4826#5021#0" expanded="false" />
-                <element signature="e#5070#5870#0" expanded="false" />
-                <element signature="e#5921#7734#0" expanded="false" />
-                <element signature="e#7786#9371#0" expanded="false" />
-                <element signature="e#10870#11030#0" expanded="false" />
+                <element signature="e#19#40#0" expanded="true" />
+                <element signature="e#372#1059#0" expanded="false" />
+                <element signature="e#1083#1878#0" expanded="false" />
+                <element signature="e#1902#2697#0" expanded="false" />
+                <element signature="e#4040#6394#0" expanded="false" />
+                <element signature="e#6500#11113#0" expanded="false" />
+                <element signature="e#7472#7868#0" expanded="false" />
+                <element signature="e#7983#8387#0" expanded="false" />
+                <element signature="e#8510#8914#0" expanded="false" />
+                <element signature="e#9016#9339#0" expanded="false" />
+                <element signature="e#9439#9766#0" expanded="false" />
+                <element signature="e#9881#10212#0" expanded="false" />
+                <element signature="e#10335#10666#0" expanded="false" />
+                <element signature="e#10780#11069#0" expanded="false" />
+                <element signature="e#11200#15323#0" expanded="false" />
+                <element signature="e#15391#15433#0" expanded="false" />
+                <element signature="e#15519#15911#0" expanded="false" />
+                <element signature="e#16018#16521#0" expanded="false" />
+                <element signature="e#16618#17127#0" expanded="false" />
+                <element signature="e#17231#18830#0" expanded="false" />
+                <element signature="e#22533#22772#0" expanded="false" />
+                <element signature="e#22975#22988#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stat_dc4.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DC4/stat_dc4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="52" column="59" lean-forward="false" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicConnect4_v1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="308" column="74" lean-forward="false" selection-start-line="308" selection-start-column="74" selection-end-line="308" selection-end-column="74" />
+              <folding>
+                <element signature="e#19#40#0" expanded="true" />
+                <element signature="e#2250#2527#0" expanded="false" />
+                <element signature="e#2687#2976#0" expanded="false" />
+                <element signature="e#3144#3433#0" expanded="false" />
+                <element signature="e#8312#12246#0" expanded="false" />
+                <element signature="e#12953#13462#0" expanded="false" />
+                <element signature="e#15501#16338#0" expanded="false" />
+                <element signature="e#16446#17637#0" expanded="false" />
+                <element signature="e#17843#19195#0" expanded="false" />
+                <element signature="e#19311#21968#0" expanded="false" />
+                <element signature="e#22060#22118#0" expanded="false" />
+                <element signature="e#22212#22276#0" expanded="false" />
+                <element signature="e#22311#22550#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -186,6 +196,8 @@
       <find>game.board</find>
       <find>self.board</find>
       <find>game</find>
+      <find>self.bo</find>
+      <find>board</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -218,13 +230,20 @@
         <option value="$PROJECT_DIR$/gym_dc4/Example/dc4_v0.py" />
         <option value="$PROJECT_DIR$/gym_dc4/gym_dc4/envs/__init__.py" />
         <option value="$PROJECT_DIR$/gym_dc4/gym_dc4/__init__.py" />
-        <option value="$PROJECT_DIR$/DC4/PlayDC4.py" />
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/DC4/DynamicConnect4.py" />
-        <option value="$PROJECT_DIR$/DC4/DynamicConnect4Interface.py" />
         <option value="$PROJECT_DIR$/gym_dc4/gym_dc4/envs/dc4_env.py" />
         <option value="$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v0.py" />
         <option value="$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v2.py" />
+        <option value="$PROJECT_DIR$/DC4/DynamicConnect4.py" />
+        <option value="$PROJECT_DIR$/DC4/TransTable.py" />
+        <option value="$PROJECT_DIR$/DC4/B.py" />
+        <option value="$PROJECT_DIR$/DC4/C.py" />
+        <option value="$PROJECT_DIR$/DC4/stat_dc4.py" />
+        <option value="$PROJECT_DIR$/DC4/DynamicConnect4Interface.py" />
+        <option value="$PROJECT_DIR$/DC4/PlayDC4.py" />
+        <option value="$PROJECT_DIR$/DC4/DynamicConnect4_v0.py" />
+        <option value="$PROJECT_DIR$/DC4/PlayDC4_v1.py" />
+        <option value="$PROJECT_DIR$/DC4/DynamicConnect4_v1.py" />
       </list>
     </option>
   </component>
@@ -234,11 +253,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="293" />
-    <option name="y" value="71" />
-    <option name="width" value="1221" />
-    <option name="height" value="636" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="y" value="27" />
+    <option name="width" value="683" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -255,8 +273,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,24 +286,6 @@
               <item name="Assignment 1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assignment 1" type="462c0819:PsiDirectoryNode" />
               <item name="DC4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment 1" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_dc4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment 1" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_dc4" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_dc4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment 1" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_dc4" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_dc4" type="462c0819:PsiDirectoryNode" />
-              <item name="envs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,111 +318,111 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dc4_v2">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.DynamicConnect4_v1">
+    <configuration name="DynamicConnect4Interface" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gym_dc4/gym_dc4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DC4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Assignment 1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gym_dc4/gym_dc4/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DC4/DynamicConnect4Interface.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dc4-v0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="DynamicConnect4_v0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gym_dc4/Example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DC4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Assignment 1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gym_dc4/Example/dc4_v0.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DC4/DynamicConnect4_v0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dc4_v0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="DynamicConnect4_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gym_dc4/gym_dc4/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DC4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Assignment 1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v0.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DC4/DynamicConnect4_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dc4_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="PlayDC4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gym_dc4/gym_dc4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DC4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Assignment 1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DC4/PlayDC4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dynamic-connect-4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="PlayDC4_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DC4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Assignment 1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DC4/DynamicConnect4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DC4/PlayDC4_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dynamic-connect-4" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dc4-v0" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dc4_v0" />
-      <item index="3" class="java.lang.String" itemvalue="Python.__init__" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dc4_v2" />
+      <item index="0" class="java.lang.String" itemvalue="Python.DynamicConnect4Interface" />
+      <item index="1" class="java.lang.String" itemvalue="Python.PlayDC4" />
+      <item index="2" class="java.lang.String" itemvalue="Python.PlayDC4_v1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.DynamicConnect4_v1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.DynamicConnect4_v0" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dc4_v2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dc4_v0" />
-        <item index="2" class="java.lang.String" itemvalue="Python.__init__" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dc4-v0" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dynamic-connect-4" />
+        <item index="0" class="java.lang.String" itemvalue="Python.DynamicConnect4_v1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DynamicConnect4_v0" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PlayDC4_v1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.PlayDC4" />
+        <item index="4" class="java.lang.String" itemvalue="Python.DynamicConnect4Interface" />
       </list>
     </recent_temporary>
   </component>
@@ -440,27 +440,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1920" height="1081" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="742" extended-state="7" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44444445" sideWeight="0.4278846" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16142558" sideWeight="0.4861111" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29350105" sideWeight="0.44497862" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.48330805" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1784188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31707317" sideWeight="0.56069803" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.47951442" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37886178" sideWeight="0.48027313" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31544715" sideWeight="0.43930197" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.48027313" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44444445" sideWeight="0.57211536" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7414634" sideWeight="0.70713204" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73878205" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.4764795" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -497,14 +497,39 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DC4/DynamicConnect4.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DC4/TelnetTest.py</url>
           <line>27</line>
           <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v2.py</url>
+          <line>254</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DC4/C.py</url>
+          <line>415</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DC4/PlayDC4_v1.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DC4/PlayDC4_v1.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DC4/DynamicConnect4_v0.py</url>
+          <line>494</line>
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DC4/DynamicConnect4_v1.py</url>
+          <line>376</line>
+          <option name="timeStamp" value="301" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -514,207 +539,35 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="160" />
+      <option name="time" value="338" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="board" />
+        <watch expression="player" />
+        <watch expression="depth" />
+        <watch expression="board" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/gym/spaces/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
+    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4Interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4Interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4Interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4Interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
+            <element signature="e#390#1077#0" expanded="false" />
+            <element signature="e#1101#1896#0" expanded="false" />
+            <element signature="e#1920#2715#0" expanded="false" />
+            <element signature="e#7443#7839#0" expanded="false" />
+            <element signature="e#8987#9310#0" expanded="false" />
+            <element signature="e#9410#9737#0" expanded="false" />
+            <element signature="e#15242#15745#0" expanded="false" />
+            <element signature="e#15842#16351#0" expanded="false" />
+            <element signature="e#16455#18054#0" expanded="false" />
+            <element signature="e#18174#19984#0" expanded="false" />
+            <element signature="e#21798#22037#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -727,34 +580,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
+    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
+            <element signature="e#390#1077#0" expanded="false" />
+            <element signature="e#1101#1896#0" expanded="false" />
+            <element signature="e#1920#2715#0" expanded="false" />
+            <element signature="e#7443#7839#0" expanded="false" />
+            <element signature="e#8987#9310#0" expanded="false" />
+            <element signature="e#9410#9737#0" expanded="false" />
+            <element signature="e#15242#15745#0" expanded="false" />
+            <element signature="e#15842#16351#0" expanded="false" />
+            <element signature="e#16455#18054#0" expanded="false" />
+            <element signature="e#18174#19984#0" expanded="false" />
+            <element signature="e#21798#22037#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -767,138 +609,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
+    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
+            <element signature="e#390#1077#0" expanded="false" />
+            <element signature="e#1101#1896#0" expanded="false" />
+            <element signature="e#1920#2715#0" expanded="false" />
+            <element signature="e#7443#7839#0" expanded="false" />
+            <element signature="e#8987#9310#0" expanded="false" />
+            <element signature="e#9410#9737#0" expanded="false" />
+            <element signature="e#15242#15745#0" expanded="false" />
+            <element signature="e#15842#16351#0" expanded="false" />
+            <element signature="e#16455#18054#0" expanded="false" />
+            <element signature="e#18174#19984#0" expanded="false" />
+            <element signature="e#21798#22037#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4Interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
+    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
+            <element signature="e#390#1077#0" expanded="false" />
+            <element signature="e#1101#1896#0" expanded="false" />
+            <element signature="e#1920#2715#0" expanded="false" />
+            <element signature="e#7443#7839#0" expanded="false" />
+            <element signature="e#8987#9310#0" expanded="false" />
+            <element signature="e#9410#9737#0" expanded="false" />
+            <element signature="e#15242#15745#0" expanded="false" />
+            <element signature="e#15842#16351#0" expanded="false" />
+            <element signature="e#16455#18054#0" expanded="false" />
+            <element signature="e#18174#19984#0" expanded="false" />
+            <element signature="e#21798#22037#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
+    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
+            <element signature="e#390#1077#0" expanded="false" />
+            <element signature="e#1101#1896#0" expanded="false" />
+            <element signature="e#1920#2715#0" expanded="false" />
+            <element signature="e#7443#7839#0" expanded="false" />
+            <element signature="e#8987#9310#0" expanded="false" />
+            <element signature="e#9410#9737#0" expanded="false" />
+            <element signature="e#15242#15745#0" expanded="false" />
+            <element signature="e#15842#16351#0" expanded="false" />
+            <element signature="e#16455#18054#0" expanded="false" />
+            <element signature="e#18174#19984#0" expanded="false" />
+            <element signature="e#21798#22037#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -921,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="367" column="8" lean-forward="false" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,9 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#36#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,22 +719,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/gym/spaces/dict_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/gym/spaces/dict_space.py" />
     <entry file="file:///usr/local/lib/python3.5/dist-packages/gym/spaces/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11">
           <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,27 +741,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/Example/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/Example/__init__.py" />
     <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/envs/dc4_extrahard_env.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2340">
           <caret line="135" column="4" lean-forward="false" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,9 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1040,7 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,23 +785,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,66 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/PlayDC4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="26" />
-          <folding>
-            <element signature="e#19#40#0" expanded="true" />
-            <element signature="e#148#1262#0" expanded="false" />
-            <element signature="e#1420#3774#0" expanded="false" />
-            <element signature="e#1538#1989#0" expanded="false" />
-            <element signature="e#2082#2537#0" expanded="false" />
-            <element signature="e#2645#3112#0" expanded="false" />
-            <element signature="e#3228#3695#0" expanded="false" />
-            <element signature="e#3880#8486#0" expanded="false" />
-            <element signature="e#4845#5241#0" expanded="false" />
-            <element signature="e#5356#5760#0" expanded="false" />
-            <element signature="e#5883#6287#0" expanded="false" />
-            <element signature="e#6389#6712#0" expanded="false" />
-            <element signature="e#6812#7139#0" expanded="false" />
-            <element signature="e#7254#7585#0" expanded="false" />
-            <element signature="e#7708#8039#0" expanded="false" />
-            <element signature="e#8153#8442#0" expanded="false" />
-            <element signature="e#8573#12507#0" expanded="false" />
-            <element signature="e#12614#13117#0" expanded="false" />
-            <element signature="e#13214#13723#0" expanded="false" />
-            <element signature="e#13827#15492#0" expanded="false" />
-            <element signature="e#15611#17420#0" expanded="false" />
-            <element signature="e#17530#18817#0" expanded="false" />
-            <element signature="e#19152#19387#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4Interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="30" column="99" lean-forward="false" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
-          <folding>
-            <element signature="e#53#985#0" expanded="false" />
-            <element signature="e#1017#2178#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1139,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1147,20 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#2845#3363#0" expanded="false" />
-            <element signature="e#3493#3880#0" expanded="false" />
-            <element signature="e#3927#4154#0" expanded="false" />
-            <element signature="e#4200#4409#0" expanded="false" />
-            <element signature="e#4460#4567#0" expanded="false" />
-            <element signature="e#4618#4777#0" expanded="false" />
-            <element signature="e#4826#5021#0" expanded="false" />
-            <element signature="e#5070#5870#0" expanded="false" />
-            <element signature="e#5921#7734#0" expanded="false" />
-            <element signature="e#7786#9371#0" expanded="false" />
-            <element signature="e#10870#11030#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="445" column="0" lean-forward="false" selection-start-line="445" selection-start-column="0" selection-end-line="445" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,20 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="1512" column="0" lean-forward="false" selection-start-line="1512" selection-start-column="0" selection-end-line="1512" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="163" column="30" lean-forward="true" selection-start-line="163" selection-start-column="30" selection-end-line="163" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#291#586#0" expanded="false" />
-            <element signature="e#964#3018#0" expanded="false" />
-            <element signature="e#3074#3293#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,21 +842,215 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="256" column="20" lean-forward="true" selection-start-line="256" selection-start-column="20" selection-end-line="256" selection-end-column="20" />
+        <state relative-caret-position="15">
+          <caret line="252" column="28" lean-forward="true" selection-start-line="252" selection-start-column="28" selection-end-line="252" selection-end-column="28" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#291#586#0" expanded="false" />
-            <element signature="e#625#936#0" expanded="false" />
-            <element signature="e#3074#3293#0" expanded="false" />
-            <element signature="e#3366#3804#0" expanded="false" />
-            <element signature="e#3847#4120#0" expanded="false" />
+            <element signature="e#0#23#0" expanded="false" />
+            <element signature="e#294#589#0" expanded="false" />
+            <element signature="e#628#939#0" expanded="false" />
+            <element signature="e#3077#3296#0" expanded="false" />
+            <element signature="e#3369#3807#0" expanded="false" />
+            <element signature="e#3850#4123#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/TransTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym_dc4/gym_dc4/dc4_v0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="165" column="16" lean-forward="false" selection-start-line="165" selection-start-column="16" selection-end-line="166" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1247971764/_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="1370" column="0" lean-forward="false" selection-start-line="1370" selection-start-column="0" selection-end-line="1371" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="1909" column="4" lean-forward="false" selection-start-line="1909" selection-start-column="4" selection-end-line="1909" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/numpy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="257" column="8" lean-forward="false" selection-start-line="257" selection-start-column="8" selection-end-line="257" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3438">
+          <caret line="482" column="28" lean-forward="false" selection-start-line="482" selection-start-column="28" selection-end-line="482" selection-end-column="28" />
+          <folding>
+            <element signature="e#19#40#0" expanded="true" />
+            <element signature="e#358#1045#0" expanded="false" />
+            <element signature="e#1069#1864#0" expanded="false" />
+            <element signature="e#1888#2683#0" expanded="false" />
+            <element signature="e#3952#6306#0" expanded="false" />
+            <element signature="e#6412#11025#0" expanded="false" />
+            <element signature="e#7384#7780#0" expanded="false" />
+            <element signature="e#7895#8299#0" expanded="false" />
+            <element signature="e#8422#8826#0" expanded="false" />
+            <element signature="e#8928#9251#0" expanded="false" />
+            <element signature="e#9351#9678#0" expanded="false" />
+            <element signature="e#9793#10124#0" expanded="false" />
+            <element signature="e#10247#10578#0" expanded="false" />
+            <element signature="e#10692#10981#0" expanded="false" />
+            <element signature="e#11112#15046#0" expanded="false" />
+            <element signature="e#15153#15656#0" expanded="false" />
+            <element signature="e#15753#16262#0" expanded="false" />
+            <element signature="e#21668#21907#0" expanded="false" />
+            <element signature="e#22111#22124#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/matplotlib/axes/_axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="648" column="8" lean-forward="false" selection-start-line="648" selection-start-column="8" selection-end-line="648" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/reportlab/graphics/barcode/usps4s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="312" column="18" lean-forward="true" selection-start-line="312" selection-start-column="18" selection-end-line="312" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="409" column="24" lean-forward="false" selection-start-line="409" selection-start-column="24" selection-end-line="409" selection-end-column="24" />
+          <folding>
+            <element signature="e#19#40#0" expanded="true" />
+            <element signature="e#372#1059#0" expanded="false" />
+            <element signature="e#1083#1878#0" expanded="false" />
+            <element signature="e#1902#2697#0" expanded="false" />
+            <element signature="e#4040#6394#0" expanded="false" />
+            <element signature="e#6500#11113#0" expanded="false" />
+            <element signature="e#7472#7868#0" expanded="false" />
+            <element signature="e#7983#8387#0" expanded="false" />
+            <element signature="e#8510#8914#0" expanded="false" />
+            <element signature="e#9016#9339#0" expanded="false" />
+            <element signature="e#9439#9766#0" expanded="false" />
+            <element signature="e#9881#10212#0" expanded="false" />
+            <element signature="e#10335#10666#0" expanded="false" />
+            <element signature="e#10780#11069#0" expanded="false" />
+            <element signature="e#11200#15323#0" expanded="false" />
+            <element signature="e#15391#15433#0" expanded="false" />
+            <element signature="e#15519#15911#0" expanded="false" />
+            <element signature="e#16018#16521#0" expanded="false" />
+            <element signature="e#16618#17127#0" expanded="false" />
+            <element signature="e#17231#18830#0" expanded="false" />
+            <element signature="e#22533#22772#0" expanded="false" />
+            <element signature="e#22975#22988#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/stat_dc4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="59" lean-forward="false" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/PlayDC4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4Interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4986">
+          <caret line="381" column="4" lean-forward="false" selection-start-line="381" selection-start-column="4" selection-end-line="421" selection-end-column="23" />
+          <folding>
+            <element signature="e#19#40#0" expanded="true" />
+            <element signature="e#390#1077#0" expanded="false" />
+            <element signature="e#1101#1896#0" expanded="false" />
+            <element signature="e#1920#2715#0" expanded="false" />
+            <element signature="e#7443#7839#0" expanded="false" />
+            <element signature="e#8987#9310#0" expanded="false" />
+            <element signature="e#9410#9737#0" expanded="false" />
+            <element signature="e#15242#15745#0" expanded="false" />
+            <element signature="e#15842#16351#0" expanded="false" />
+            <element signature="e#16455#18054#0" expanded="false" />
+            <element signature="e#18174#19984#0" expanded="false" />
+            <element signature="e#21798#22037#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/PlayDC4_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="65" column="26" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#224#1168#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DC4/DynamicConnect4_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="308" column="74" lean-forward="false" selection-start-line="308" selection-start-column="74" selection-end-line="308" selection-end-column="74" />
+          <folding>
+            <element signature="e#19#40#0" expanded="true" />
+            <element signature="e#2250#2527#0" expanded="false" />
+            <element signature="e#2687#2976#0" expanded="false" />
+            <element signature="e#3144#3433#0" expanded="false" />
+            <element signature="e#8312#12246#0" expanded="false" />
+            <element signature="e#12953#13462#0" expanded="false" />
+            <element signature="e#15501#16338#0" expanded="false" />
+            <element signature="e#16446#17637#0" expanded="false" />
+            <element signature="e#17843#19195#0" expanded="false" />
+            <element signature="e#19311#21968#0" expanded="false" />
+            <element signature="e#22060#22118#0" expanded="false" />
+            <element signature="e#22212#22276#0" expanded="false" />
+            <element signature="e#22311#22550#0" expanded="false" />
           </folding>
         </state>
       </provider>

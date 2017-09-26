@@ -1,2 +1,2 @@
-from DC4.DynamicConnect4 import game
+from DC4.DynamicConnect4_v0 import game
 from DC4.DynamicConnect4Interface import draw_table_score

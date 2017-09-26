@@ -1,7 +1,7 @@
 import gym
 import time
 from gym import error, spaces, utils
-from DC4.DynamicConnect4 import game
+from DC4.DynamicConnect4_v0 import game
 from DC4.DynamicConnect4Interface import draw_table_score, write_2_file
 import random
 

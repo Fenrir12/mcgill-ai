@@ -3,7 +3,7 @@ import sys
 import time
 from telnetlib import *
 
-from DynamicConnect4 import game
+from DynamicConnect4_v0 import game
 
 if __name__ == "__main__":
     # Setup game
