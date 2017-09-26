@@ -48,8 +48,8 @@ class game_v0():
         self.depth_limit = 2
         self.time_limit = 9
         self.start_time = time()
-        self.MIN = -1000
-        self.MAX = 1000
+        self.MIN = -1000000
+        self.MAX = 1000000
         self.no_of_nodes = 0
         self.no_of_turns = 0
         self.USE_PRUNING = False
@@ -67,9 +67,9 @@ class game_v0():
                         and board[row][col] == board[row + 2][col] \
                         and board[row][col] == board[row + 3][col]:
                     if board[row][col] == self.MaxSym:
-                        return 100
+                        return 1000
                     else:
-                        return -100
+                        return -1000
 
         # Assess horizontal win for both players
         for row in range(0, self.ROWS):
@@ -79,9 +79,9 @@ class game_v0():
                         and board[row][col] == board[row][col + 2] \
                         and board[row][col] == board[row][col + 3]:
                     if board[row][col] == self.MaxSym:
-                        return 100
+                        return 1000
                     else:
-                        return -100
+                        return -1000
 
         # Assess diagonal win (increasing) for both players
         for row in range(0, self.ROWS - 3):
@@ -91,9 +91,9 @@ class game_v0():
                         and board[row][col] == board[row + 2][col + 2] \
                         and board[row][col] == board[row + 3][col + 3]:
                     if board[row][col] == self.MaxSym:
-                        return 100
+                        return 1000
                     else:
-                        return -100
+                        return -1000
 
         # Assess diagonal win (decreasing) for both players
         for row in range(self.ROWS - 3, self.ROWS):
@@ -103,9 +103,9 @@ class game_v0():
                         and board[row][col] == board[row - 2][col + 2] \
                         and board[row][col] == board[row - 3][col + 3]:
                     if board[row][col] == self.MaxSym:
-                        return 100
+                        return 1000
                     else:
-                        return -100
+                        return -1000
 
         # Return value of evaluation function if no win
         return self.eval(board)
@@ -497,12 +497,12 @@ if __name__ == "__main__":
         game.no_of_plies = []
         player = not player
         score = game.is_winning(game.board)
-        if score == 100:
+        if score == 1000:
             print('I won')
             mean = np.mean(game.mean_ply)
             std = np.std(game.mean_ply)
             break
-        elif score == -100:
+        elif score == -1000:
             print('Other player won')
             break
 

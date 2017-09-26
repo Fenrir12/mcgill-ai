@@ -2,9 +2,11 @@
 
 from time import time
 import copy
+import numpy as np
 from DynamicConnect4Interface import draw_table_score
 
-#Alpha Beta Pruning with Iterative Deepening
+
+# Alpha Beta Pruning with Iterative Deepening
 class game_v1():
     def __init__(self):
         self.ROWS = 7
@@ -31,6 +33,7 @@ class game_v1():
         self.no_of_turns = 0
         self.USE_PRUNING = False
         self.USE_ITERATIVE_DEEPENING = False
+        self.eval_time = []
 
     # Method of winning check function. \
     # Returns 1000 for winning Maximizer and -1000 for winning Minimizer
@@ -81,6 +84,7 @@ class game_v1():
 
     # Method of evaluation function. Returns the goodness of a state
     def eval(self, board, color):
+        start_time = time()
         gauss_eval = [[3, 4, 5, 7, 5, 4, 3],
                       [4, 6, 8, 10, 8, 6, 4],
                       [5, 8, 11, 13, 11, 8, 5],
@@ -101,7 +105,6 @@ class game_v1():
                     node[row][col] = self.EmpSym
                     node[row + 1][col] = self.EmpSym
                     node[row + 2][col] = self.EmpSym
-
         # Assess horizontal 3-in-a-row for both players
         for row in range(0, self.ROWS):
             for col in range(0, self.COLS - 2):
@@ -112,7 +115,6 @@ class game_v1():
                     node[row][col] = self.EmpSym
                     node[row][col + 1] = self.EmpSym
                     node[row][col + 2] = self.EmpSym
-
         # Assess diagonal (increasing) 3-in-a-row for both players
         for row in range(0, self.ROWS - 2):
             for col in range(0, self.COLS - 2):
@@ -177,7 +179,13 @@ class game_v1():
                 if node[row][col] == color:
                     gaussian_score += gauss_eval[row][col]
 
+        self.eval_time.append(time() - start_time)
         return eval_score + gaussian_score
+
+
+    # Method that adds complexity to evaluation function
+    def eval_addon(self, board, color):
+        pass
 
     # Method to find every possible moves
     def move(self, board, player):
@@ -267,6 +275,7 @@ class game_v1():
                 moves.append([self.ROWS - 1, self.COLS - 1, 'W'])
         return moves
 
+
     # Do the move and return the board for this move
     def do_move(self, board, move, player):
         if player == self.MaxPlayer:
@@ -283,6 +292,7 @@ class game_v1():
         elif move[2] == 'W':
             board[move[0]][move[1] - 1] = boardcase
         return board
+
 
     # Undo the move and return the board
     def undo_move(self, board, move, player):
@@ -301,12 +311,13 @@ class game_v1():
             board[move[0]][move[1] - 1] = self.EmpSym
         return board
 
+
     def minimax_ab(self, board, depth, player, alpha, beta):
         # Increment node counter
         self.no_of_nodes += 1
         node = list(board)
         # Look if someone player is winning
-        score = self.is_winning(node, player) - self.is_winning(node, not player)
+        score = self.is_winning(node, self.MaxPlayer) - self.is_winning(node, self.MinPlayer)
 
         if depth >= self.depth_limit or time() - self.start_time > self.time_limit:
             return score
@@ -344,6 +355,7 @@ class game_v1():
                     break
             return best
 
+
     # Negamax function to explore possible moves
     def negamax(self, board, depth, player):
         # Increment node counter
@@ -352,7 +364,7 @@ class game_v1():
         # Look if someone player is winning
         score = self.is_winning(board, not player)
         if depth >= self.depth_limit or time() - self.start_time > self.time_limit:
-            return score*-1
+            return score * -1
 
         best = self.MIN
 
@@ -367,6 +379,7 @@ class game_v1():
             # Return board to previous state
             node = self.undo_move(node, move, player)
         return best
+
 
     # Negamax with alpha-beta Pruning
     def negamax_ab(self, node, depth, player, alpha, beta):
@@ -396,6 +409,7 @@ class game_v1():
             if beta <= alpha:
                 break
         return bestvalue
+
 
     # Alpha-Beta Pruning variation of minimax function with Negascout.
     # Needs good ordering of moves to achieve better performances
@@ -432,6 +446,7 @@ class game_v1():
             if beta <= alpha:
                 break
         return alpha
+
 
     # Runs minimax at depth 0 to return best move at present
     def find_best_move(self, board, player):
@@ -489,24 +504,28 @@ class game_v1():
                     id_best_value = bestvalue
                     id_best_move = bestmove
 
-            print("Explored " + str(self.no_of_nodes) + ' nodes at depth ' + str(self.depth_limit)+ ' in ' + str(time()-self.start_time) + ' s.')
+            print("Explored " + str(self.no_of_nodes) + ' nodes at depth ' + str(self.depth_limit) + ' in ' + str(
+                time() - self.start_time) + ' s.')
             if self.USE_ITERATIVE_DEEPENING:
+                if time() - self.start_time > self.time_limit:
+                    break
                 # Go for a deeper search level if time permits it
                 self.no_of_nodes = 0
                 self.depth_limit += 1
-                if time() - self.start_time > self.time_limit:
-                    break
             else:
                 break
         return id_best_move
+
 
     # Convert move from server to move format
     def convert_move(self, string):
         return [int(string[0]) - 1, int(string[1]) - 1, string[2]]
 
+
     # Convert move from move format to server format
     def send_move(self, move):
         return str(str(move[0] + 1) + str(move[1] + 1) + move[2] + "\n")
+
 
     def move_list(self):
         netmoves = []
@@ -519,8 +538,8 @@ class game_v1():
 
 if __name__ == "__main__":
     game = game_v1()
-    game.time_limit = 5
-    game.depth_limit = 4
+    game.time_limit = 10
+    game.depth_limit = 10
     player = game.MaxPlayer
     board = game.board
     game.USE_PRUNING = True
@@ -531,10 +550,12 @@ if __name__ == "__main__":
         # Update board with best move of each player
         best_move = game.find_best_move(board, player)
         board = game.do_move(board, best_move, player)
-        print('\n\nExplored ' + str(game.no_of_nodes) + ' nodes')
         draw_table_score(board)
+        print(
+        "mean evaluation time is " + str(np.mean(game.eval_time)) + ' seconds for ' + str(game.no_of_nodes) + ' nodes')
         game.no_of_nodes = 0
         game.no_of_plies = []
+        game.eval_time = []
         score = game.is_winning(game.board, player)
         if score == 1000:
             print('I won')

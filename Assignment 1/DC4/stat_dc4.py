@@ -1,8 +1,14 @@
 import matplotlib.pyplot as plt
 
+
+time = [3.67129185542e-05, 5.21418181369e-05, 6.6118182319e-05]
+nodes = [95364, 74617, 61784]
+
+
+
 depth = [1, 2, 3, 4, 5, 6]
 
-# Board A
+# Board Al
 minimax_A = [10, 190, 2130, 34983, 417455, 6666384]
 alphabeta_A = [10, 190, 1087, 6051, 33803, 266828]
 figA = plt.figure()

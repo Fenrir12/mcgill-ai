@@ -22,7 +22,7 @@ def start_auto_game(color, version):
 
     board = game.board
     game.time_limit = 9
-    game.depth_limit = 2
+    game.depth_limit = 6
     game.USE_PRUNING = True
     score = 0
 
@@ -35,11 +35,15 @@ def start_auto_game(color, version):
         game.no_of_nodes = 0
         game.no_of_plies = []
         player = not player
-        score = game.is_winning(game.board)
-        if score == 100:
+        if version == 'v0':
+            score = game.is_winning(board)
+        elif version == 'v1':
+            score = game.is_winning(board, player)
+
+        if score == 1000:
             print('I won')
             break
-        elif score == -100:
+        elif score == -1000:
             print('Other player won')
             break
 
@@ -66,8 +70,10 @@ def start_server_game(host, port, game_id, color, version):
     player = dc4.MaxPlayer
     # Define player's color
     if color == 'white':
+        player = dc4.MaxPlayer
         isTurn = True
     elif color == "black":
+        player = dc4.MaxPlayer
         isTurn = False
 
     # Enter game
@@ -89,17 +95,17 @@ def start_server_game(host, port, game_id, color, version):
                 score = dc4.is_winning(board, player)
 
             if player == dc4.MinPlayer:
-                if score == 100:
+                if score == 1000:
                     print('Other player won')
                     break
-                elif score == -100:
+                elif score == -1000:
                     print('I won in ' + str(dc4.no_of_turns))
                     break
             else:
-                if score == 100:
+                if score == 1000:
                     print('I won in ' + str(dc4.no_of_turns))
                     break
-                elif score == -100:
+                elif score == -1000:
                     print('Other player won')
                     break
             dc4.no_of_nodes = 0
