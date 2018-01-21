@@ -12,15 +12,15 @@ For instance, [784, 135, 10] specifies a neural network with an input layer of 7
 [I, H1, H2, H3, ..., Hn, O].
 
 This custom implementation contains many parmeters to tweak performances of  the network and add capacities. At its core, the network is initialized with following capacities :
--Learning Rate = 0.1, 
--Batch Size = 10,  
--Number of epochs for learning = 10,
--Activation function of hidden layers  = 'sigmoid',
--Activation function of output layers='sigmoid', 
--Cost function used for gradient descent='Squared euclidean distance',
--Regularization method for learning ='dropout', 
--Dropout rate = 0.2, 
--Momentum = 1
+- Learning Rate = 0.1, 
+- Batch Size = 10,  
+- Number of epochs for learning = 10,
+- Activation function of hidden layers  = 'sigmoid',
+- Activation function of output layers='sigmoid', 
+- Cost function used for gradient descent='Squared euclidean distance',
+- Regularization method for learning ='dropout', 
+- Dropout rate = 0.2, 
+- Momentum = 1
 
 Class definition:
  '''Initializes weight matrices with respect to specified number of neurons
